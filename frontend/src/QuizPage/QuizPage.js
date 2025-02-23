@@ -26,7 +26,7 @@ function  QuizPage()
     
         const handleCheckboxChange = (index,ans) => {
             setSelectedOption(index);
-           {ans == index ? (setCurrect(currect+1) ): (setWrong(wrong+1)) }
+           {ans === index ? (setCurrect(currect+1) ): (setWrong(wrong+1)) }
         };
          function confermation()
          {
