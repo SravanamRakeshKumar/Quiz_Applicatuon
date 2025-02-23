@@ -13,16 +13,14 @@ function  QuizPage()
     const API_URL = process.env.REACT_APP_API_URL;
 
     useEffect(() => {
-        if (!API_URL || !location.state?.subject) return;  
-    
-        fetch(`${API_URL}/questions/${location.state.subject}/${count}`)  
+        fetch(`${API_URL}questions/${location.state.subject}/${count}`)  
             .then(res => res.json())
             .then(result => {
                 setData(result);
                 setSelectedOption(false);
             })
             .catch(err => console.error("Error fetching data:", err));
-    }, [API_URL, location.state.subject, count]); 
+    }, [count]); 
     
         const handleCheckboxChange = (index,ans) => {
             setSelectedOption(index);
