@@ -1,0 +1,471 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+#about,#courses,#contact,#services,#feedback
+{
+    width:99dvw;
+    height:100dvh;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+header
+{
+    top:0px;
+    width:100%;
+    height:15%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    z-index: 300;
+}
+header img
+{
+    position: relative;
+    width:15%;
+    height: 100%;
+    margin-left: 20px;
+}
+header #icons
+{
+    position:relative;
+    width:50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header #icons a,main #content #info button,header #icons button 
+{
+    
+    position: relative;
+    width:12%;
+    height:50%;
+    border-radius: 10px;
+}
+header #icons a button,#courses #subjects .box button
+{
+    position:realtive;
+    width:100%;
+    height: 100%;
+    background-color: black;
+    outline: none;
+    border:none;
+    font-size: 17px;
+    color:white;
+}
+header #icons button 
+{
+    background-color: green;
+    border:none;
+    cursor: pointer;
+    color:white;
+    font-size: 17px;
+}
+header #icons a button:hover
+{
+    background-color: blue;
+    cursor: pointer;
+}
+header #icons a:hover,#courses #subjects .box button
+{
+    cursor: pointer;
+}
+ main,#about,#contact
+{
+position:relative;
+width: 100%;
+height:100dvh;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+main #info
+{
+    width:50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+main  #info h1
+{
+    font-size:50px;
+    color:blue;
+}
+main  #info  p
+{
+    line-height:1.5;
+    /* font-family:'Times New Roman', Times, serif; */
+}
+main  #info button
+{
+    height:13%;
+    width:40%;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border:none;
+    border-radius: 5px;
+}
+main  #info button:hover
+{
+    outline:5px double black;
+    background-color: white;
+    color:black;
+}
+ main img,#about img
+{
+    position:relative;
+    width:40%;
+    height: 60%;
+}
+#about img
+{
+    position:relative;
+    width:30%;
+    height: 50%;
+    margin-top: 70px;
+}
+#about #about-mater
+{
+    position: relative;
+    width:60%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+#about #about-mater h1
+{
+    padding-bottom: 5px;
+    border-bottom: 7px double green;
+}
+#about #about-mater #bullet-points
+{
+    position:relative;
+    width:100%;
+    height:60%;
+    margin-top:25px;
+    display: flex;
+    align-items:start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 30px;
+}
+#about #about-mater #bullet-points p 
+{
+    display: flex;
+    align-items: center;
+}
+#about #about-mater #bullet-points span
+{
+    font-size: 30px;
+    margin-right: 10px;
+    color:red;
+}
+main img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#courses,#services,#feedback
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+#courses #subjects,#services #sf,#feedback #feedbackdiv 
+{
+    position: relative;
+    width:100%;
+    height: 55%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#feedback #feedbackdiv 
+{
+    margin-top: 0px;
+    height: 70%;
+}
+#services #sf
+{
+    margin-top: 50px;
+    height:50%;
+}
+#courses h1,#services h1,#feedback>h1
+{
+    margin-top: 60px;
+    padding-bottom:5px;
+    border-bottom:5px solid red;
+}
+#services h1
+{
+    margin-top:20px;
+}
+#courses #subjects .box,#services #sf .sbox
+{
+position: relative;
+width:20%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+text-align: center;
+}
+#services #sf .sbox
+{
+    padding:0px 15px;
+    box-shadow: 0px 0px 3px 5px dimgray;
+}
+#services #sf .sbox p
+{
+    position:absolute;
+    visibility: hidden;
+    line-height:1.5;
+}
+#services #sf .sbox::after
+{
+    position:absolute;
+    content:"";
+    left:0px;
+    width:0%;
+    height: 100%;
+    background-color:black;
+    filter:opacity(0.7);
+    z-index:10;
+}
+#services #sf .sbox:hover::after 
+{
+    width:100%;
+    transition:1.5s;
+}
+#services #sf .sbox:hover p
+{
+    visibility: visible;
+    animation:visible 2s 1 forwards;
+    z-index:200;
+    color:white;
+    font-weight: bold;
+}
+@keyframes visible {
+    0%
+    {
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+#courses #subjects .box img ,#services #sf .sbox img
+{
+    position: relative;
+    width:70%;
+    height: 50%;
+    border-radius: 10px;
+}
+#services #sf .sbox img
+{
+    width:90%;
+    height: 70%;
+}
+#courses #subjects .box:hover
+{
+    box-shadow: 0px 0px 5px 5px dimgray;
+}
+#courses #subjects .box a,#services #sf .sbox button
+{
+width:65%;
+height:12%;
+}
+#services #sf .sbox button
+{
+background:linear-gradient(to left,red,blue);
+border-radius: 10px;
+outline: none;
+border: none;
+color:white;
+font-weight: bold;;
+}
+#courses #subjects .box a button
+{
+position:relative;
+width:100%;
+height: 100%;
+text-decoration: none;
+color:white;
+background:linear-gradient(to left,red,blue);
+border-radius: 10px;
+}
+#contact img 
+{
+    position:relative;
+    width:40%;
+    height: 80%;
+    margin-top:70px;
+}
+#feedbackdiv img
+{
+    padding-left:1%;
+}
+#contact form,#feedbackdiv form
+{
+    position:relative;
+    width:40%;
+    height: 55%;
+    background-color:dodgerblue;
+    border-radius: 10px;
+    border:1px solid red;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+#feedbackdiv form
+{
+    background-color: red;
+    height:70%;
+    margin-right: 70px;
+    margin-bottom: 30px;
+}
+#contact form input,form input
+{
+    width:70%;
+    height:5%;
+    padding:10px;
+    outline: none;
+    border:none;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#contact form textarea,form textarea
+{
+    outline: none;
+    padding:3px;
+    font-weight: bold;
+    font-size: 13px;
+}
+#contact form button,#feedbackform button
+{
+    width:auto;
+    height:auto;
+    padding:12px 30px;
+    border:none;
+    background-color:yellow;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#feedbackform button
+{
+    background-color: blue;
+    color:white;
+}
+#feedbackform #stars
+{
+    position:relative;
+    width:100%;
+    height:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+#feedbackform #stars p
+{
+ position:relative;
+ font-size: 30px;
+ color:yellow;
+}
+#contact form button:hover
+{
+    cursor: pointer;
+} 
+#footer
+{
+    position:relative;
+    width:100%;
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: black;
+}
+#footer #icons-div
+{
+    position:relative;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    column-gap: 15px;
+}
+#footer #sections-div button 
+{
+    position: relative;
+    padding:10px 20px;
+    margin:0px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    border:none;
+    color:white;
+}
+#footer #icons-div .icon
+{
+    position: relative;
+    width:30px;
+    height:25px;
+    border-radius: 50%;
+    padding:12px;
+    background-color: white;
+}
+#footer #icons-div .youtube:hover
+{
+    background-color:red;
+    color:white;
+}
+#footer #icons-div .whatsap:hover
+{
+    background-color:green;
+    color:white;
+}
+#footer #icons-div .google:hover
+{
+    background-color:yellow;;
+    color:black;
+}
+#footer #icons-div .instagram:hover
+{
+    background:linear-gradient(to left,red,blue);
+    color:white;
+}
+#footer #icons-div .facebook:hover
+{
+    background-color:blue;
+    color:white;
+}
+#footer p 
+{
+    color:dimgray;
+}

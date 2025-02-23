@@ -1,0 +1,275 @@
+{
+    "aptitude":[
+        {
+            "id":1,
+            "quesition":"what is the value of x in the equation 2x+5=11?",
+            "options":["2","3","4","5"],
+            "answer":"1"
+        },
+        {
+            "id":2,
+            "quesition":"Which of the following statements is logically equivalent to 'If it rains, then the streets will be wet'?",
+            "options":["If the streets are wet, then it rains.","If the streets are not wet, then it does not rain.","It rains only if the streets are wet.","It rains only if the streets are wet."],
+            "answer":"3"
+        },
+        {
+            "id":3,
+            "quesition":"Choose the correct synonym for the word 'Perspicacious'.",
+            "options":["Intelligent","Observant","Enthusiastic","Ambitious"],
+            "answer":"1"
+        },
+        {
+            "id":4,
+            "quesition":"A company's sales revenue increased from $100,000 to $120,000 over a year. What is the percentage increase?",
+            "options":["10%","15%","20%","25%"],
+            "answer":"2"
+        },
+        {
+            "id":5,
+            "quesition":"A snail is at the bottom of a 20-foot well. Each day, it climbs up 3 feet, but at night, it slips back 2 feet. How many days will it take for the snail to reach the top?",
+            "options":["18","20","22","25"],
+            "answer":"0"
+        },
+        {
+            "id":6,
+            "quesition":"Complete the series: 2, 6, 12, 20, ?",
+            "options":["30","32","36","40"],
+            "answer":"0"
+        },
+        {
+            "id":7,
+            "quesition":"Solve for x: x^2 + 5x - 6 = 0",
+            "options":["x = -6, x = 1","x = -1, x = 6","x = 2, x = -3","x = 3, x = -2"],
+            "answer":"0"
+        },
+        {
+            "id":8,
+            "quesition":"What is the perimeter of a rectangle with a length of 8 cm and a width of 5 cm?",
+            "options":["18 cm","20 cm","26 cm","30 cm"],
+            "answer":"2"
+        },
+        {
+            "id":9,
+            "quesition":"A and B can complete a task in 12 hours together. A alone can complete the task in 15 hours. How many hours will B alone take to complete the task?",
+            "options":["20","24","30","36"],
+            "answer":"0"
+        },
+        {
+            "id":10,
+            "quesition":"A product's price increases by 20%. If the original price was $100, what is the new price?",
+            "options":["$120","$122","$125","$130"],
+            "answer":"0"
+        }
+   ],
+   "reasoning":[
+        {
+            "id":1,
+            "quesition":"If it is true that 'All cats are mammals' and 'Some mammals are carnivores,' which conclusion can be logically drawn?",
+            "options":[" All cats are carnivores.","Some cats are carnivores.","No cats are carnivores.","All carnivores are cats."],
+            "answer":"1"
+        },
+        {
+            "id":2,
+            "quesition":"Five friends - Alex, Ben, Charlie, David, and Emily - are standing in a line. Charlie is standing next to Ben, and Emily is standing next to David. Alex is not standing next to Charlie. Who is standing at the extreme left?",
+            "options":["Alex","Ben","Charlie","Charlie"],
+            "answer":"0"
+        },
+        {
+            "id":3,
+            "quesition":"Identify the next number in the sequence: 2, 5, 10, 17, 26",
+            "options":["37","39","41","43"],
+            "answer":"0"
+        },
+        {
+            "id":4,
+            "quesition":"All students are hardworking.Some hardworking people are successful.Conclusion:",
+            "options":["All students are successful.","Some students are successful.","No students are successful.","All successful people are students."],
+            "answer":"1"
+        },
+        {
+            "id":5,
+            "quesition":"Is x > y? Statement 1: x + y = 10,Statement 2: x - y = 2",
+            "options":["Statement 1 alone is sufficient.","Statement 2 alone is sufficient.","Both statements together are sufficient.","Neither statement is sufficient."],
+            "answer":"2"
+        },
+        {
+            "id":6,
+            "quesition":"There are three switches, but they are not labelled. Each switch corresponds to one of three light bulbs in a room. How can you figure out which switch corresponds to which light bulb?",
+            "options":["Turn two switches on for 5 minutes, then turn one off.","Turn one switch on for 5 minutes, then turn it off."," Turn all switches on for 5 minutes, then turn two off.","Turn two switches on, then turn one off after 1 minute."],
+            "answer":"0"
+        },
+        {
+            "id":7,
+            "quesition":"Identify the next number in the sequence: 1, 2, 4, 8, 16",
+            "options":["32","36","40","48"],
+            "answer":"0"
+        },
+        {
+            "id":8,
+            "quesition":"f it rains heavily, the roads will flood. If the roads flood, traffic will jam. If traffic jams, people will be late for work. Conclusion:",
+            "options":["Heavy rain will make people late for work.","Flooding roads will make people late for work.","Traffic jams will make people late for work.","All of the above."],
+            "answer":"3"
+        },
+        {
+            "id":9,
+            "quesition":"Car : Road :: Boat : ?",
+            "options":["River","Sea","Harbour","Dock"],
+            "answer":"one"
+        },
+        {
+            "id":10,
+            "quesition":"if it is true that 'If I study hard, I will pass the exam,' which conclusion can be logically drawn?",
+            "options":["If I pass the exam, I must have studied hard.","If I do not study hard, I will not pass the exam.","If I do not pass the exam, I must not have studied hard."," If I pass the exam, I may not have studied hard."],
+            "answer":"1"
+        }
+   ],
+    "english": [
+      {
+        "id": 1,
+        "quesition": "Choose the correct form of the verb: 'By the time she ____ home, her brother ____ to the park.'",
+        "options": ["gets, goes", "will get, went", "got, goes", "gets, will go"],
+        "answer": "three"
+      },
+      {
+        "id": 2,
+        "quesition": "Select the correct tense for the sentence: 'I ____ (work) on this project for two hours when you called.'",
+        "options": ["was working", "am working", "worked", "will be working"],
+        "answer": "one"
+      },
+      {
+        "id": 3,
+        "quesition": "Identify the sentence with the correct subject-verb agreement:",
+        "options": [
+          "Neither the manager nor the employees was at the meeting.",
+          "Neither the manager nor the employees were at the meeting.",
+          "Neither the manager nor the employees are at the meeting.",
+          "Neither the manager nor the employees be at the meeting."
+        ],
+        "answer": "two"
+      },
+      {
+        "id": 4,
+        "quesition": "Choose the correct preposition for the sentence: 'She is interested ____ learning new languages.'",
+        "options": ["in", "on", "at", "of"],
+        "answer": "one"
+      },
+      {
+        "id": 5,
+        "quesition": "Pick the correct article for the sentence: '____ book on the table is mine.'",
+        "options": ["An", "A", "The", "No article is needed"],
+        "answer": "three"
+      },
+      {
+        "id": 6,
+        "quesition": "Choose the correct form of the adjective: 'This is the ____ movie I have ever seen.'",
+        "options": ["more interesting", "most interesting", "interesting", "interestingly"],
+        "answer": "two"
+      },
+      {
+        "id": 7,
+        "quesition": "Choose the sentence with the correct punctuation:",
+        "options": [
+          "I’m going to the store, and I’ll be back soon.",
+          "I’m going to the store and I’ll be back soon.",
+          "I’m going to the store and, I’ll be back soon.",
+          "I’m going, to the store and I’ll be back soon."
+        ],
+        "answer": "one"
+      },
+      {
+        "id": 8,
+        "quesition": "Identify the correctly written sentence:",
+        "options": [
+          "I haven’t seen him yet, and he hasn’t seen me.",
+          "I have yet seen him, and he has yet seen me.",
+          "I haven’t yet seen him, and he hasn’t yet seen me.",
+          "I haven’t seen yet him, and he hasn’t seen me yet."
+        ],
+        "answer": "three"
+      },
+      {
+        "id": 9,
+        "quesition": "Choose the correct sentence:",
+        "options": [
+          "If I will go to the event, I will call you.",
+          "If I go to the event, I will call you.",
+          "If I will have gone to the event, I would have called you.",
+          "If I gone to the event, I would call you."
+        ],
+        "answer": "two"
+      },
+      {
+        "id": 10,
+        "quesition": "Pick the correct sentence:",
+        "options": [
+          "He explained me the solution.",
+          "He explained to me the solution.",
+          "He explained for me the solution.",
+          "He explained the solution to me."
+        ],
+        "answer": "four"
+      }
+    ],
+   "technical":[
+        {
+            "id":1,
+            "quesition":"What is the primary function of the Kernel in an Operating System?",
+            "options":["Memory Management","Process Management","File Management","All of the above"],
+            "answer":"3"
+        },
+        {
+            "id":2,
+            "quesition":"Which protocol is used for routing in the Internet?",
+            "options":["TCP","UDP","IP","BGP"],
+            "answer":"3"
+        },
+        {
+            "id":3,
+            "quesition":"What is the purpose of Normalization in DBMS?",
+            "options":["To reduce data redundancy","To reduce data redundancy","To improve data security","All of the above"],
+            "answer":"3"
+        },
+        {
+            "id":4,
+            "quesition":"What is the output of the following C++ code? int x = 5;int y = x++;cout << x << ' ' << y; ",
+            "options":["6 5","5 6","6 6","5 5"],
+            "answer":"0"
+        },
+        {
+            "id":5,
+            "quesition":"What is the time complexity of Binary Search algorithm?",
+            "options":["O(n)","O(log n)"," O(n log n)","O(1)"],
+            "answer":"1"
+        },
+        {
+            "id":6,
+            "quesition":"What is the most efficient algorithm for finding the shortest path in a graph?",
+            "options":["Breadth-First Search (BFS)","Depth-First Search (DFS)","Dijkstra's algorithm","Bellman-Ford algorithm"],
+            "answer":"2"
+        },
+        {
+            "id":7,
+            "quesition":"What is the purpose of HTML5?",
+            "options":["To create dynamic web pages","To create static web pages","To improve web page layout"," To replace Flash"],
+            "answer":"0"
+        },
+        {
+            "id":8,
+            "quesition":"What is the most common type of cyber attack?",
+            "options":["Phishing","Phishing","Phishing","Cross-Site Scripting (XSS)"],
+            "answer":"0"
+        },
+        {
+            "id":9,
+            "quesition":"What is the Waterfall model in Software Development Life Cycle?",
+            "options":[" Iterative and incremental","Linear and sequential","Agile and flexible","Parallel and concurrent"],
+            "answer":"1"
+        },
+        {
+            "id":10,
+            "quesition":"What is the output of the following Java code?int x = 10;if (x > 5) {System.out.println('x is greater than 5');}else {System.out.println('x is less than or equal to 5');}",
+            "options":["x is greater than 5","x is less than or equal to 5","Error","None"],
+            "answer":"0"
+        }
+   ]
+}

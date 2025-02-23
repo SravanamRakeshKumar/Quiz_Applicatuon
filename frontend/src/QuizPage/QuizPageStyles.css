@@ -1,0 +1,244 @@
+#imgdull
+{
+    position:absolute;
+    width:100dvw;
+    height:100dvh;
+    background-image: url("https://t3.ftcdn.net/jpg/09/30/54/70/360_F_930547059_gPOXNEOOKeAyDdqQ4POq6qIJJuIin119.webp");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    opacity:0.3;
+}
+#submition-box
+{
+    position:absolute;
+    width:400px;
+    height: 300px;
+    background-color:white;
+    top:-50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px black;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-direction: column;
+    visibility: hidden;
+}
+@keyframes popup {
+    0%
+    {
+         top:-50%;
+    }
+    100%
+    {
+       top:50%;
+    }
+    
+}
+#submition-box #message
+{
+    position:relative;
+    width:100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+#submition-box #message #tick
+{
+    position:relative;
+    width:35%;
+    height:75%;
+    transform: scale(0);
+}
+@keyframes effect {
+    0%
+    {
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+#submition-box button
+{
+    background-color:blue;
+    color:white;
+    outline:none;
+    border:none;
+    font-size: 17px;
+    padding:15px 30px;
+    border-radius: 5px;
+}
+#page
+{
+    width:100dvw;
+    height:100dvh;
+    background-color:black;
+}
+#title
+{
+    position:relative;
+    top:0px;
+    width:100dvw;
+    height:5%;
+    text-align: center;
+    font-size:35px;
+    color:gold;
+    z-index: 1;
+    font-weight: bold;
+}
+#quesition
+{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    flex-direction: column;
+    width:100%;
+    height: 95%;
+    color:white;
+}
+#quesition h1
+{
+    width:95%;
+    margin:15px 0px 0px 10px;
+    line-height:1.5;
+    font-size:25px;
+}
+#quesition ol
+{
+    width: 100%;
+    margin:00px 0px 20px 40px;
+    height:auto;
+    font-size: 17px;
+    position:relative;
+}
+#quesition ol li
+{
+    margin:15px;
+    width:60%;
+    height:auto;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    column-gap: 20px;
+    padding:5px 30px 5px 10px;
+    position:relative;
+    border-radius: 5px;;
+}
+#quesition ol li:hover
+{
+    background-color:white;
+    color:black;
+}
+#quesition ol input[type="radio"]
+{
+    width:30px;
+    height: 30px;
+    accent-color:blue;
+    border-radius: 50%;
+}
+
+#quesition #buttons
+{
+    position:relative;
+    width:50%;
+    height:10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap:50px;
+}
+#quesition #buttons button
+{
+    position:relative;
+    width:25%;
+    height:80%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border:none;
+}
+#quesition #buttons button:hover
+{
+    background-color: yellow;
+    border:5px solid white;
+    cursor: pointer;
+}
+#quesition  #submit
+{
+    position:absolute;
+    width:15%;
+    height:10%;
+    font-size: 20px;
+    bottom:50px;
+    left:525px;
+    font-weight:bolder;
+    background-color: blue;
+    color:white;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 2.5px;
+    box-shadow:0px 0px 10px 0px black;
+    border: none;
+}
+
+#quesition  #submit
+{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:769px)
+{
+    #page #title 
+    {
+        padding-top:25px;
+        font-size: 3vh;
+    }
+    #quesition h1 
+    {
+        font-size: 2.3vh;
+    }
+    #quesition ol
+    {
+        height:auto;
+        /* background-color: red; */
+    }
+    #quesition ol li 
+    {
+        font-size:1.3rem;
+        left:-50px;
+        width:100%;
+
+    }
+    #quesition #buttons
+    {
+        position:absolute;
+        bottom: 300px;
+        width:100%;
+    }
+    #quesition #buttons button
+    {
+        height: 60%;
+        font-size: 2vh;
+    }
+    #quesition #submit
+    {
+        position:absolute;
+        bottom:150px;
+        left:35%;
+        height: 7%;
+        width:30%;
+        font-size: 2.5vh;
+    }
+
+}
+

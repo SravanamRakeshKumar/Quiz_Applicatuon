@@ -1,0 +1,156 @@
+#feedback
+{
+    width:99dvw;
+    height:100dvh;
+    overflow: hidden;
+}
+#feedback
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+#feedback #feedbackdiv 
+{
+    position: relative;
+    width:100%;
+    height: 55%;
+    margin-top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#feedback #feedbackdiv 
+{
+    margin-top: 0px;
+    height: 70%;
+    /* background-color: red; */
+}
+#feedback>h1
+{
+    margin-top: 70px;
+    padding-bottom:5px;
+    border-bottom:5px solid red;
+}
+#feedbackdiv img
+{
+    padding-left:1%;
+    margin-bottom: 50px;
+}
+#feedbackdiv form
+{
+    position:relative;
+    width:40%;
+    height: 55%;
+    background-color:dodgerblue;
+    border-radius: 10px;
+    border:1px solid red;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0px;
+}
+#feedbackdiv form
+{
+    background-color: red;
+    height:70%;
+    margin-right: 70px;
+    margin-bottom: 30px;
+}
+form input
+{
+    width:70%;
+    height:5%;
+    padding:10px;
+    outline: none;
+    border:none;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form textarea
+{
+    width:70%;
+    height:20%;
+    outline: none;
+    padding:5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+#feedbackform button
+{
+    width:auto;
+    height:auto;
+    padding:12px 30px;
+    border:none;
+    background-color:yellow;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#feedbackform button
+{
+    background-color: blue;
+    color:white;
+}
+#feedbackform #stars
+{
+    position:relative;
+    width:100%;
+    height:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom:10px;
+}
+#feedbackform #stars p
+{
+ position:relative;
+ font-size: 30px;
+ color:yellow;
+}
+
+@media only screen and (max-width:769px)
+{
+    #feedbackdiv img 
+    {
+         margin-left:50px;  
+        width:100%;
+        margin-bottom: 20px;
+
+    }
+    #feedbackdiv form
+    {
+        margin:0px;
+        height: 50%;
+        width:80%;
+    }
+    #feedbackdiv form h1
+    {
+        font-size:3vh;
+        margin: 0px;
+    }
+     form textarea
+    {
+        width:80%;
+        height: 20%;
+        padding:5px 0px 0px 5px;
+    }
+    #feedbackform #stars p
+    {
+    position:relative;
+   font-size: 25px;
+    color:yellow;
+    }
+    #feedbackform button
+    {
+        font-size: 2vh;
+    }
+}

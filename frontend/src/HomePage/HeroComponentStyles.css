@@ -1,0 +1,104 @@
+main
+{
+position:relative;
+width: 100%;
+height:100dvh;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+main #info
+{
+    width:55%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+}
+main  #info h1
+{
+    font-size:63px;
+    color:blue;
+    margin-bottom: 5px;
+}
+main  #info  p
+{
+    line-height:1.5;
+    margin-bottom: 30px;
+    font-size:20px;
+}
+main  #info button
+{
+    padding:12px 30px 12px 30px;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border:none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+main  #info button:hover
+{
+    outline:5px double black;
+    background-color: white;
+    color:black;
+}
+ main img
+{
+    position:relative;
+    width:40%;
+    height: 60%;
+}
+main img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media only screen and (max-width:769px)
+{
+    main 
+    {
+        justify-content:space-evenly;
+        height:auto;
+    }
+    main #info 
+    {
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        flex-direction: column;
+        /* background-color:green; */
+        line-height:1.2;
+        height:800px;
+        margin-top:100px;
+    }
+    main  #info h1
+{
+    font-size:70px;
+    color:blue;
+}
+main  #info  p
+{
+    line-height:1.5;
+    font-size:1.5rem;
+    padding:0px 30px;
+    font-family:'Times New Roman', Times, serif;
+}
+    main img
+{
+    position:relative;
+    width:100%;
+    margin-top: 60px;
+    height: 50%;
+}
+main  #info button
+{
+    font-size: 1.6rem;
+
+}
+
+}

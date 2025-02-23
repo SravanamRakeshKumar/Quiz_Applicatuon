@@ -1,0 +1,153 @@
+#services
+{
+    width:99dvw;
+    height:100dvh;
+}
+#services
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+#services #sf
+{
+    position: relative;
+    width:100%;
+    height: 55%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#services #sf
+{
+    margin-top: 50px;
+    height:50%;
+    flex-wrap: wrap;
+}
+#services h1
+{
+    margin-top: 60px;
+    padding-bottom:5px;
+    border-bottom:5px solid red;
+}
+#services h1
+{
+    margin-top:60px;
+}
+#services #sf .sbox
+{
+position: relative;
+width:20%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+text-align: center;
+}
+#services #sf .sbox
+{
+    padding:0px 15px;
+    box-shadow: 0px 0px 3px 5px dimgray;
+}
+#services #sf .sbox p
+{
+    position:absolute;
+    visibility: hidden;
+    line-height:1.5;
+}
+#services #sf .sbox::after
+{
+    position:absolute;
+    content:"";
+    left:0px;
+    width:0%;
+    height: 100%;
+    background-color:black;
+    filter:opacity(0.7);
+    z-index:10;
+}
+#services #sf .sbox:hover::after 
+{
+    width:100%;
+    transition:1.5s;
+}
+#services #sf .sbox:hover p
+{
+    visibility: visible;
+    animation:visible 2s 1 forwards;
+    color:white;
+    font-weight: bold;
+    z-index:500;
+}
+@keyframes visible {
+    0%
+    {
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+#services #sf .sbox img
+{
+    position: relative;
+    width:70%;
+    height: 50%;
+    border-radius: 10px;
+}
+#services #sf .sbox img
+{
+    width:90%;
+    height: 70%;
+}
+#services #sf .sbox button
+{
+width:65%;
+height:12%;
+}
+#services #sf .sbox button
+{
+background:linear-gradient(to left,red,blue);
+border-radius: 10px;
+outline: none;
+border: none;
+color:white;
+font-weight: bold;;
+}
+@media only screen and (max-width:769px)
+{
+    #services #sf
+    {
+    height: 100dvh;   
+    justify-content: space-evenly;
+    /* background-color: red; */
+    }
+    #services #sf .sbox
+    {
+        position:relative;
+        width:80%;
+        height: 30%;
+        font-size: 20px;
+    }
+    #services #sf .sbox h2
+    {
+        /* background-color: green; */
+        margin: 0px;
+        font-size: 3vh;
+    }
+    #services #sf .sbox img
+{
+    width:90%;
+    height: 80%;
+}
+
+#services #sf .sbox:hover p
+{
+    font-size: 2vh;
+}
+
+}
