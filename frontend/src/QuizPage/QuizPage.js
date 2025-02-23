@@ -14,7 +14,7 @@ function  QuizPage()
 
     useEffect(()=>
     {
-       fetch(`${API_URL}/${location.state.subject}/${count}`)
+       fetch(`${API_URL}questions/${location.state.subject}/${count}`)
        .then(res =>res.json())
        .then(result=>{
         setData(result);

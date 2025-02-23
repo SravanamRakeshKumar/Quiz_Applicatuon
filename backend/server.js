@@ -1,39 +1,50 @@
 const express = require("express");
 const cors = require("cors");
-const questions = require("./quesitions.json"); // Load JSON file
+const questions = require("./quesitions.json"); // Ensure JSON structure is correct
+
 require("dotenv").config();
 
 const PORT = process.env.PORT || 5000;
-
 const app = express();
+
 app.use(express.json());
 app.use(cors());
 
-// Serve entire questions.json file
-app.get("/quesitions", (req, res) => {
+// ✅ Get all questions
+app.get("/questions", (req, res) => {
   res.json(questions);
 });
 
-// Serve questions based on category (like "aptitude", "reasoning", etc.)
-// app.get("/questions/:category", (req, res) => {
-//   const category = req.params.category;
-//   if (questions[category]) {
-//     res.json(questions[category]);
-//   } else {
-//     res.status(404).json({ error: "Category not found" });
-//   }
-// });
+// ✅ Get all questions for a specific category
+app.get("/questions/:category", (req, res) => {
+  const category = req.params.category.toLowerCase(); // Convert to lowercase to avoid case issues
 
-app.get("/questions/:category/:index", (req, res) => {
-  const category = req.params.category;
-  const index = parseInt(req.params.index); // Convert index to a number
-
-  if (questions[category] && questions[category][index]) {
-    res.json(questions[category][index]);
+  if (questions[category]) {
+    res.json(questions[category]); // Return all questions in that category
   } else {
-    res.status(404).json({ error: "Question not found" });
+    res.status(404).json({ message: "Category not found" });
   }
 });
 
-// Start server
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// ✅ Get a specific question by ID from a category
+app.get("/questions/:category/:id", (req, res) => {
+  const category = req.params.category.toLowerCase();
+  const id = parseInt(req.params.id);
+
+  if (questions[category]) {
+    const question = questions[category].find((q) => q.id === id);
+
+    if (question) {
+      res.json(question);
+    } else {
+      res.status(404).json({ message: "Question not found" });
+    }
+  } else {
+    res.status(404).json({ message: "Category not found" });
+  }
+});
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
