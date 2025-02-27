@@ -126,6 +126,11 @@ font-weight: bold;;
     justify-content: space-evenly;
     /* background-color: red; */
     }
+    #services>h1
+{
+    font-size:20px;
+    margin-top:60px;
+}
     #services #sf .sbox
     {
         position:relative;
