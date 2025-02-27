@@ -87,7 +87,7 @@ height:12%;
     }
     #courses #subjects
     {
-        height:200dvh;
+        height:180dvh;
         margin-top: 0px;
         justify-content: space-evenly;
         /* background-color: red; */
@@ -99,8 +99,8 @@ height:12%;
     }
     #courses #subjects .box
     {
-       width:80%;
-       height:20%;
+       width:100%;
+       height:22%;
     }
     #courses #subjects .box a button
     {
