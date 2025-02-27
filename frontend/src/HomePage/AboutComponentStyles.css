@@ -64,7 +64,7 @@
 {
     padding-bottom: 25px;
     border-bottom: 10px double green;
-    font-size: 32px;
+    font-size:25px;
     margin-top: 100px;
 } 
 #aboutc #about-content 
@@ -81,12 +81,12 @@
 }
 #about-content  #bullet-points p 
 {
-    margin:10px;
-    font-size: 30px;
+    margin:7px;
+    font-size:24px;
 }
 #about-content #bullet-points span
 {
-    font-size: 50px;
+    font-size: 40px;
     margin-right: 20px;
     color:red;
 }
