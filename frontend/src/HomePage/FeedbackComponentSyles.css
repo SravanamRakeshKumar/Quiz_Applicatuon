@@ -119,7 +119,7 @@ form textarea
 
 @media only screen and (max-width:769px)
 {
-    form input,textarea
+    form input,form textarea
     {
         font-size:12px;
     }
