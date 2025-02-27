@@ -119,6 +119,10 @@ form textarea
 
 @media only screen and (max-width:769px)
 {
+    form input,textarea
+    {
+        font-size:12px;
+    }
     #feedbackdiv img 
     {
          margin-left:50px;  
